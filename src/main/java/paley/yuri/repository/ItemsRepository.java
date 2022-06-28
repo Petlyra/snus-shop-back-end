@@ -1,8 +1,6 @@
 package paley.yuri.repository;
 
-import paley.yuri.entity.Item;
 import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
+import paley.yuri.entity.Item;
 
-public interface ItemsRepository extends JpaRepositoryImplementation<Item, Long> {
-
-}
+public interface ItemsRepository extends JpaRepositoryImplementation<Item, Long> {}

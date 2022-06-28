@@ -13,10 +13,10 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 public class ItemsController {
-    private final ItemsService itemsService;
+  private final ItemsService itemsService;
 
-    @GetMapping("/")
-    public List<ItemDto> getAllItems() {
-        return itemsService.getAll();
-    }
+  @GetMapping("/")
+  public List<ItemDto> getAllItems() {
+    return itemsService.getAll();
+  }
 }

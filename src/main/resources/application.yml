@@ -26,7 +26,7 @@ spring:
         format_sql: true
     show-sql: false
   liquibase:
-    enabled: false
+    enabled: false # manual
     change-log: classpath:changelog.xml
   jackson:
     serialization:

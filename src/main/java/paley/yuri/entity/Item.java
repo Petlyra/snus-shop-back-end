@@ -15,21 +15,21 @@ import java.time.LocalDateTime;
 @Table(name = "item")
 @Builder
 public class Item {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  @Column(name = "id")
+  private Long id;
 
-    @Column(name = "name")
-    private String name;
+  @Column(name = "name")
+  private String name;
 
-    @Column(name = "price")
-    private BigDecimal price;
+  @Column(name = "price")
+  private BigDecimal price;
 
-    @Column(name = "image")
-    private String image;
+  @Column(name = "image")
+  private String image;
 
-    @CreatedDate
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
+  @CreatedDate
+  @Column(name = "created_at")
+  private LocalDateTime createdAt;
 }

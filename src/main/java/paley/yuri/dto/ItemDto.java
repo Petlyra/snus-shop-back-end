@@ -14,9 +14,9 @@ import java.time.LocalDateTime;
 @JsonSerialize
 @Builder
 public class ItemDto {
-    private Long id;
-    private String name;
-    private BigDecimal price;
-    private String image;
-    private LocalDateTime createdAt;
+  private Long id;
+  private String name;
+  private BigDecimal price;
+  private String image;
+  private LocalDateTime createdAt;
 }
