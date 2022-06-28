@@ -1,7 +1,6 @@
 package service;
 
 import dto.ItemDto;
-import entity.Item;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import mappers.ItemConverter;
