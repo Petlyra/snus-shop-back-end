@@ -3,9 +3,6 @@ package paley.yuri.dto;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 @ToString
@@ -14,9 +11,9 @@ import java.time.LocalDateTime;
 @JsonSerialize
 @Builder
 public class ItemDto {
-  private Long id;
+  private String id;
   private String name;
-  private BigDecimal price;
+  private String price;
   private String image;
-  private LocalDateTime createdAt;
+  private String createdAt;
 }

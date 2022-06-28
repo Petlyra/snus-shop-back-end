@@ -34,3 +34,6 @@ spring:
   servlet:
     multipart:
       max-file-size: 10MB
+
+liquibase:
+  manual: true
