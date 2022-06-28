@@ -1,11 +1,11 @@
-package service;
+package paley.yuri.service;
 
-import dto.ItemDto;
+import paley.yuri.dto.ItemDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import mappers.ItemConverter;
+import paley.yuri.mappers.ItemConverter;
 import org.springframework.stereotype.Service;
-import repository.ItemsRepository;
+import paley.yuri.repository.ItemsRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

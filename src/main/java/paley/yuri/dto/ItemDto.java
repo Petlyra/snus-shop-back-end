@@ -1,4 +1,4 @@
-package dto;
+package paley.yuri.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;

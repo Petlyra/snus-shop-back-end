@@ -1,4 +1,4 @@
-package entity;
+package paley.yuri.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

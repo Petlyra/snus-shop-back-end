@@ -1,7 +1,7 @@
-package mappers;
+package paley.yuri.mappers;
 
-import dto.ItemDto;
-import entity.Item;
+import paley.yuri.dto.ItemDto;
+import paley.yuri.entity.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
