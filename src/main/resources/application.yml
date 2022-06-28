@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/snus
+    username: postgres
+    password: 781245
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      # https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby
+      maximum-pool-size: 100
+      minimum-idle: 40
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        connection:
+          charSet=UTF-8:
+        hbm2ddl:
+          import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
+        format_sql: true
+    show-sql: false
+  liquibase:
+    enabled: false
+    change-log: classpath:changelog.xml
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
