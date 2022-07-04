@@ -34,7 +34,9 @@ public class ItemsService {
   }
 
   public ItemDto save(ItemDto itemDto) {
-    return itemConverter.toDto(itemsRepository.save(itemConverter.fromDto(itemDto)));
+    Item item = itemConverter.fromDto(itemDto);
+    Item savedItem = itemsRepository.save(item);
+    return itemConverter.toDto(savedItem);
   }
 
   public ItemDto update(ItemRequest itemRequest, Long id) {
